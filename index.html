@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<title>Document</title>
+</head>
+<body>
+	<header class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="" class="navbar-brand">TodoList</a>
+			</div>
+			
+			<div class="collapse navbar-collapse" id="nav">
+				<ul class="nav navbar-nav">
+					<li><a href="/">Home</a></li>
+				</ul>				
+			</div>
+		</div>
+	</header>
+
+	<main class="container-fluid">
+		<p>
+			<div class="form-group">
+				<input type="text" class="form-control" placeholder="Enter your todo name" name="todo" id="todo_name">
+			</div>
+			<div class="form-group">
+				<button type="submit" class="btn btn-primary" onClick="create()">Add</button>
+			</div>
+		</p>
+
+		<hr>
+
+		<table class="table table-bordered" id="table_data">
+			<thead>
+				<tr>
+					<th>Todo</th>
+					<th>Action</th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+	</main>
+
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+	<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/localforage/1.5.0/localforage.min.js"></script> -->
+	<script src="./node_modules/localforage/dist/localforage.min.js"></script>
+	<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="./todolist.js"></script>	
+</body>
+</html>
